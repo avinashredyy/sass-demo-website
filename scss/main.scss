@@ -1,6 +1,10 @@
 @import "./resets";
 @import "./variables";
 
+@function weight($weightName) {
+  @return map-get($fontWeights, $weightName);
+}
+
 body {
   background: $primaryColor;
   color: $textColor;
@@ -17,7 +21,9 @@ body {
 
   //This is same as above. '&' means - parent
   #{&}_para {
-    font-weight: map-get($fontWeights, bold);
+    // font-weight: map-get($fontWeights, bold);
+    //Same as above but using a function
+    font-weight: weight(bold);
 
     &:hover {
       color: pink;

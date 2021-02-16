@@ -1,7 +1,33 @@
 $primaryColor: black;
 $accentColor: orange;
 $textColor: white;
+//This is called a map
+$fontWeights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
 
 body {
   background: $primaryColor;
+  color: $textColor;
+  //   font-weight: map-get($fontWeights, bold);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  //   p {
+  //     font-weight: map-get($fontWeights, bold);
+  //   }
+
+  //This is same as above. '&' means - parent
+  #{&}_para {
+    font-weight: map-get($fontWeights, bold);
+
+    &:hover {
+      color: pink;
+    }
+  }
 }

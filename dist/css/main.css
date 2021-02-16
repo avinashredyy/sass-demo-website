@@ -28,12 +28,16 @@ body {
           flex-direction: row;
 }
 
-.main .main_para {
+.main .main_para1, .main .main_para2 {
   font-weight: 700;
 }
 
-.main .main_para:hover {
+.main .main_para1:hover, .main .main_para2:hover {
   color: pink;
+}
+
+.main .main_para2:hover {
+  color: orange;
 }
 
 @media (max-width: 800px) {

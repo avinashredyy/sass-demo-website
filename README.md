@@ -9,3 +9,5 @@
 4. Functions are created where we return the get-map function and the associated value. Then we can use it by passing in a valid argument to get the associated value of the argument from the map.
 
 5. Mixins are similar to functions but fnctions are used to compute values and mixins are used to define styles. If the argument passed in the mxin is false, it wont even appear on the css file.
+
+6. @extend in scss is used in order to resuse the styles of another class with additional style modifications if you have any

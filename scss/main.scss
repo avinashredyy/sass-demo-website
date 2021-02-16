@@ -39,13 +39,20 @@ body {
   //     font-weight: map-get($fontWeights, bold);
   //   }
   //This is same as above. '&' means - parent
-  #{&}_para {
+  #{&}_para1 {
     // font-weight: map-get($fontWeights, bold);
     //Same as above but using a function
     font-weight: weight(bold);
 
     &:hover {
       color: pink;
+    }
+  }
+
+  #{&}_para2 {
+    @extend .main_para1;
+    &:hover {
+      color: $accentColor;
     }
   }
 

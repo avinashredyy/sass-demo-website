@@ -4,4 +4,6 @@
 
 2. Maps - Create($fontWeights: ("regular": 400 );) and use(font-weight: map-get($fontWeights, bold);) Maps
 
-3. Partials are used when we dont want to make changes to the main.css files itself directly. We create another scss file with a prefix of '\_'. For ex. '\_reset.scss' and import it into our main.scss file.
+3. Partials are used when we dont want to make changes to the main.css files itself directly. We create another scss file with a prefix of '\_'. For ex. '\_reset.scss' and import it into our main.scss file
+
+4. Functions are created where we return the get-map function and the associated value. Then we can use it by passing in a valid argument to get the associated value of the argument from the map.

@@ -1,3 +1,7 @@
+$primaryColor: black;
+$accentColor: orange;
+$textColor: white;
+
 body {
-  background: blue;
+  background: $primaryColor;
 }
